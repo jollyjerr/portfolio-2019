@@ -4,9 +4,9 @@
       <img src="./assets/logo.jpeg" alt="hello world">
       <div class="nav-links">
         <router-link to="/">Home</router-link> 
-        <router-link to="/">Code</router-link> 
-        <router-link to="/">Music</router-link> 
-        <router-link to="/">Contact</router-link> 
+        <router-link to="/projects">Code</router-link> 
+        <router-link to="/music">Music</router-link> 
+        <router-link to="/contact">Contact</router-link> 
       </div>
     </nav>
     <router-view/>
@@ -51,17 +51,18 @@ body {
     justify-self: center;
     &.router-link-exact-active {
       color: $important;
+      border-bottom: 2px solid $important;
     }
     @media only screen and (max-width: 600px) {
       padding: 0 2%;
     }
   }
+  a:hover {
+      border-bottom: 2px solid $dull;
+  }
   img {
     width: 5rem;
     border-radius: 100%;
-    @media only screen and (max-width: 600px) {
-      // width: 3rem;
-    }
   }
 }
 #footer {
