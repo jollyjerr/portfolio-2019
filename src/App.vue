@@ -57,19 +57,19 @@ body {
     // font-weight: bold;
     transform: scale(150);
     padding: 0 5%;
-    color: $title;
+    color: $dull;
     text-decoration: none;
     justify-self: center;
     &.router-link-exact-active {
-      color: $important;
-      border-bottom: 2px solid $important;
+      color: $title;
+      border-bottom: 2px solid $title;
     }
     @media only screen and (max-width: 600px) {
       padding: 0 2%;
     }
   }
   a:hover {
-      border-bottom: 2px solid $dull;
+      border-bottom: 2px solid $title;
   }
   img {
     width: 5rem;
