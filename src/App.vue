@@ -11,10 +11,18 @@
     </nav>
     <router-view/>
     <footer id="footer">
-      <i class="fab fa-linkedin-in"></i>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-medium-m"></i>
+      <a href="https://www.linkedin.com/in/jeremiahtabb/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/jollyjerr" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://twitter.com/JerrTabb" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://medium.com/@jollyjerr" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-medium-m"></i>
+      </a>
     </footer>
   </div>
 </template>
