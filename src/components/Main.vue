@@ -2,7 +2,8 @@
   <div class="landing-container">
     <header>
       <h1>Jeremiah Tabb</h1>
-      <h2>Full Stack Software Engineer</h2>
+      <h3>Full Stack Software Engineer</h3>
+      <h3>Composer</h3>
     </header>
    
   </div>
