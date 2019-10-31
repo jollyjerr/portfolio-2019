@@ -38,7 +38,7 @@ export default {
     .language-icons {
       display: flex;
       justify-content: space-evenly;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       i {
         font-size: 250%;
       }
