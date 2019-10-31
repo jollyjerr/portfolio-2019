@@ -44,10 +44,17 @@ body {
   background-color: $background;
   width: 100%;
   height: 100%;
+  main {
+    padding-top: 60px;
+  }
 }
 #nav {
+  position: fixed;
+  z-index: 10;
   padding: 10px;
   height: 60px;
+  width: 100%;
+  background-color: $background;
   border-bottom: 1px solid $dull;
   .nav-links {
     margin-top: 52px;

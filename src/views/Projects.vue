@@ -1,7 +1,7 @@
 <template>
-  <div class="projects">
+  <main class="projects">
     <Portfolio />
-  </div>
+  </main>
 </template>
 
 <script>

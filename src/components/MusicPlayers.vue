@@ -18,6 +18,9 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/variables.scss';
     .music-players {
-        padding: $normal
+        padding: $normal;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 </style>

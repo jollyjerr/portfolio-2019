@@ -1,5 +1,8 @@
 <template>
     <main class="music" >
+        <header>
+            <h1>Music</h1>
+        </header>
         <MusicPlayers />
     </main>
 </template>
@@ -14,3 +17,12 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+@import '../assets/variables.scss';
+.music {
+    header {
+        padding: $normal;
+    }
+}
+</style>
