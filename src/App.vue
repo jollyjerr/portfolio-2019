@@ -8,7 +8,12 @@
         <router-link to="/contact">Contact</router-link> 
       </div>
     </nav>
-    <router-view/>
+    <transition
+      name="fade"
+      mode="out-in"
+    >
+      <router-view/>
+    </transition>
     <footer id="footer">
       <a href="https://www.linkedin.com/in/jeremiahtabb/" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-linkedin-in"></i>
@@ -91,5 +96,17 @@ body {
     font-size: 170%;
     padding-top: 4px;
   }
+}
+//transitions
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-main">
     <div class="landing-container">
         <img src="../assets/welcome.jpeg" alt="This is a picture of me!">
       <header>
@@ -28,6 +28,9 @@ export default {
 
 <style lang="scss">
 @import '../assets/variables.scss';
+  .home-main {
+    width: 100%;
+  }
   .landing-container {
     display: flex;
     justify-content: space-evenly;
@@ -46,13 +49,11 @@ export default {
   }
   .main-projects{
     background-color: $background;
-    width: 100%;
     height: 60px;
     padding: $normal
   }
   .main-music {
     background-color: $background;
-    width: 100%;
     height: 60px;
     padding: $normal;
   }
