@@ -1,12 +1,23 @@
 <template>
     <div class="portfolio" >
-        
+        <ul class="projects" >
+            <div v-for="project in projects" :key="project.id" >
+                <ProjectListing :project="project" />
+            </div>
+        </ul>
     </div>
 </template>
 
 <script>
+import ProjectListing from '@/components/ProjectListing.vue'
 export default {
-    name: 'Portfolio'
+    name: 'Portfolio',
+    components: {
+        ProjectListing
+    },
+    props: {
+        projects: Array
+    }
 }
 </script>
 
