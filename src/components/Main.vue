@@ -62,6 +62,9 @@ export default {
     h3 {
       color: $title;
     }
+    @media only screen and (max-width: 600px) {
+      padding-bottom: 0;
+    }
   }
   .main-projects{
     background-color: $background;
