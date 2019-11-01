@@ -28,8 +28,11 @@ export default {
         justify-content: flex-start;
         flex-wrap: wrap;
         .portfolio-project-listing {
-            width: 25rem;
+            width: 48%;
             padding: 1%;
+            @media only screen and (max-width: 600px) {
+                width: 100%
+            }
         }
     }
 </style>
