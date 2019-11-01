@@ -35,12 +35,18 @@ export default {
     header {
         padding: $normal;
     }
+    p {
+        color: $title;
+    }
     .language-icons {
       display: flex;
       justify-content: space-evenly;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       i {
         font-size: 250%;
+      }
+      @media only screen and (max-width: 400px) {
+        flex-wrap: wrap;
       }
     }
 }

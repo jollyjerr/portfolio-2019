@@ -26,7 +26,7 @@ export default new Router({
     {
       path: '/contact',
       name: 'contact',
-      component: () => import(/* webpackChunkName: "music" */ './views/Contact.vue')
+      component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue')
     }
   ]
 })

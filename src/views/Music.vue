@@ -25,5 +25,8 @@ export default {
     header {
         padding: $normal;
     }
+    p {
+        color: $title;
+    }
 }
 </style>

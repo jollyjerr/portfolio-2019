@@ -35,19 +35,23 @@ export default {
     padding: $normal;
     img {
       width: 25rem;
+      border-radius: $phstandard;
       @media only screen and (max-width: 600px) {
         width: 100%
       }
     }
+    h3 {
+      color: $title;
+    }
   }
   .main-projects{
-    background-color: $secondary;
+    background-color: $background;
     width: 100%;
     height: 60px;
     padding: $normal
   }
   .main-music {
-    background-color: $important;
+    background-color: $background;
     width: 100%;
     height: 60px;
     padding: $normal;
