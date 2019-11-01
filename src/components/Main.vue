@@ -11,7 +11,14 @@
       </header>
     </div>
       <div class="main-projects" >
-        <h2></h2>
+        <div class="location info-box">
+          <i class="fas fa-map-marker-alt" id="map-icon" ></i>
+          <label for="map-icon">Denver, CO</label>
+        </div>
+        <div class="resume info-box">
+          <a href="https://drive.google.com/file/d/1zwKq59CRYwrip2ExyicfqG165mbFsegh/view?usp=sharing" target="_blank" ><i class="fas fa-scroll" id="resume-icon" ></i></a>
+          <label for="resume-icon">Resume</label> 
+        </div>
       </div>
       <div class="main-music" >
 
@@ -55,11 +62,47 @@ export default {
     h3 {
       color: $title;
     }
+    @media only screen and (max-width: 600px) {
+      padding-bottom: 0;
+    }
   }
   .main-projects{
     background-color: $background;
-    height: 60px;
-    padding: $normal
+    height: max-content;
+    padding: $normal;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .info-box {
+      height: 100%;
+      width: 46%;
+      padding: 2%;
+      @media only screen and (max-width: 600px) {
+        width: 100%
+      }
+      i {
+        display: block;
+        width: max-content;
+        margin: auto;
+        transform: scale(1.3);
+      }
+      label {
+        display: block;
+        width: max-content;
+        margin: auto;
+        transform: scale(1.3);
+      }
+      a {
+        color: $text;
+        text-decoration: none;
+      }
+    }
+    .location {
+      background-color: $secondary;
+    }
+    .resume {
+      background-color: $important;
+    }
   }
   .main-music {
     background-color: $background;
