@@ -22,11 +22,6 @@ export default new Router({
       path: '/music',
       name: 'music',
       component: () => import(/* webpackChunkName: "music" */ './views/Music.vue')
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue')
     }
   ]
 })

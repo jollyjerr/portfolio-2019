@@ -5,7 +5,6 @@
         <router-link to="/">Home</router-link> 
         <router-link to="/projects">Code</router-link> 
         <router-link to="/music">Music</router-link> 
-        <router-link to="/contact">Contact</router-link> 
       </div>
     </nav>
     <transition
