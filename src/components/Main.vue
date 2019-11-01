@@ -99,6 +99,7 @@ export default {
         width: max-content;
         margin: auto;
         transform: scale(1.3);
+        padding-top: 4px;
       }
     }
     .location {

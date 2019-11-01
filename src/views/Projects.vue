@@ -15,7 +15,7 @@
         <i class="devicon-vuejs-plain colored"></i>
       </div>
     </header>
-    <Portfolio />
+    <Portfolio :projects="projects" />
   </main>
 </template>
 
@@ -25,6 +25,11 @@ export default {
   name: 'projects',
   components: {
     Portfolio
+  },
+  computed: {
+    projects() {
+      return this.$store.state.projects
+    }
   }
 }
 </script>

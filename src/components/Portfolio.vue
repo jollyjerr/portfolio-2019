@@ -1,12 +1,21 @@
 <template>
     <div class="portfolio" >
-        <h1>Hey I am the projects component</h1>
+        <div v-for="project in projects" :key="project.id" class="portfolio-project-listing">
+            <ProjectListing :project="project" />
+        </div>
     </div>
 </template>
 
 <script>
+import ProjectListing from '@/components/ProjectListing.vue'
 export default {
-    name: 'Portfolio'
+    name: 'Portfolio',
+    components: {
+        ProjectListing
+    },
+    props: {
+        projects: Array
+    }
 }
 </script>
 
@@ -14,6 +23,13 @@ export default {
 <style lang="scss" scoped>
     @import '../assets/variables.scss';
     .portfolio {
-        padding: $normal
+        padding: $normal;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .portfolio-project-listing {
+            width: 25rem;
+            padding: 1%;
+        }
     }
 </style>
