@@ -1,7 +1,9 @@
 <template>
   <div class="home-main">
     <div class="landing-container">
+      <div class="image-container"  >
         <img src="../assets/welcome.jpeg" alt="This is a picture of me!">
+      </div>
       <header>
         <h1>Jeremiah Tabb</h1>
         <h3>Full Stack Software Engineer</h3>
@@ -36,11 +38,18 @@ export default {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: $normal;
-    img {
+    .image-container {
+      display: block;
       width: 25rem;
-      border-radius: $phstandard;
+      max-height: 400px;
       @media only screen and (max-width: 600px) {
         width: 100%
+      }
+      img { // BUG this is failing on mobile devices but not chrome simulations
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: $phstandard;
       }
     }
     h3 {
