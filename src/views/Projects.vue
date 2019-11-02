@@ -39,6 +39,7 @@ export default {
 .projects {
     header {
         padding: $normal;
+        padding-bottom: 0;
     }
     p {
         color: $title;
