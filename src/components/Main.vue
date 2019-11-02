@@ -23,7 +23,7 @@
         </a>
       </div>
       <div class="main-contact" >
-        <a href="mailto:tabbjeremiah@gmail.com">
+        <a href="mailto:tabbjeremiah@gmail.com" target="_blank">
           <div class="email">
             <i class="fas fa-envelope"></i>
             <p>tabbjeremiah@gmail.com</p>
