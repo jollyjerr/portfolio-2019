@@ -26,7 +26,7 @@ export default new Vuex.Store({
     }, {
       id: 4,
       name: 'Trip-Up',
-      description: 'The perfect website for keeping all of your adventures organized!',
+        description: 'A web application for scheduling trips with your friends.',
       link: 'https://github.com/jollyjerr/Trip-Up',
       image: 'https://github.com/jollyjerr/Trip-Up/raw/master/github/comments.gif'
     }]
