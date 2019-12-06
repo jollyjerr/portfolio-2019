@@ -22,7 +22,7 @@ export default new Vuex.Store({
       name: 'Harmonics',
       description: 'A web application that recommends chord progressions according to principles of tonal harmony as a user writes music.',
       link: 'https://github.com/jollyjerr/Harmonics',
-      image: 'https://github.com/jollyjerr/Harmonics/raw/master/github/save.gif'
+      image: 'https://github.com/jollyjerr/Harmonics/blob/harmonics2.0/github/save.gif'
     }, {
       id: 4,
       name: 'Trip-Up',
