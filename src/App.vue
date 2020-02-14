@@ -49,8 +49,8 @@ body {
   height: 100%;
   main {
     padding-top: 60px;
+    min-height: calc(100vh - 100px);
   }
-  min-height: 100vh;
 }
 #nav {
   position: fixed;
